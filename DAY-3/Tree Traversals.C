@@ -58,20 +58,20 @@ int main() {
     int n, data;
     struct node* root = NULL;
 
-    printf("Enter the number of nodes in the BST: ");
+    printf("Enter the number of nodes in the BST : ");
     scanf("%d", &n);
 
-    printf("Enter the nodes: ");
+    printf("Enter the nodes : \n");
     for (int i = 0; i < n; i++) {
         scanf("%d", &data);
         root = insert(root, data);
     }
 
-    printf("Inorder traversal: ");
+    printf("\nInorder traversal   : ");
     inorder(root);
-    printf("\nPreorder traversal: ");
+    printf("\nPreorder traversal  : ");
     preorder(root);
-    printf("\nPostorder traversal: ");
+    printf("\nPostorder traversal : ");
     postorder(root);
 
     return 0;
